@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Showing A Remote Form</title>
+    
+    
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/black-tie/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css?v=3" type="text/css" />
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js'></script>
+    
+    <script src="popUpForm.jquery.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.contact a').popUpForm({
+            container   : '#modalform',
+            onSuccess   : function() {
+                alert('Thanks for your submission!');
+                //alert($(this).attr('href')); }
+            },
+            onError     : function() { alert('something wonky happened'); }
+        });
+        $('.survey a').popUpForm({ 'container' : '#othercontainer' });
+    });
+    
+    </script>
+    
+</head>
+<body>
+    <div id='container'>
+        <div class="col1 unit">
+            <ul>
+                <li class='net liimg'><a href="http://net.tutsplus.com/">&raquo; Net Tuts</a></li>
+                <li class='psd liimg'><a href="http://psd.tutsplus.com/">&raquo; PSD Tuts</a></li>
+                <li class='vec liimg'><a href="http://vector.tutsplus.com/">&raquo; Vector Tuts</a></li>
+                <li class='contact'><a href="form.html">&raquo; Contact &raquo;</a></li>
+                <li class='survey'><a href="form.html?x">&raquo; Survey &raquo;</a></li>
+            </ul>
+            
+        </div>
+        <div class="col2 unit">
+            <h1>Modal-Form Demo</h1>
+            <p>This is the demo page for the modal form progressive enhancement.
+               <strong>Try clicking on the 'contact' or 'survey' links</strong> to see the modal
+               form in action</p>
+            <p>The jQuery plug-in is loading these forms from another page and
+               putting them in the modal. If a user doesn't have javascript
+               enabled, or if there was a problem fetching the remote page,
+               the link will instead operate as normal.</p>
+            
+        </div>
+        
+    </div>
+    
+    
+    
+    
+</body>
+</html>

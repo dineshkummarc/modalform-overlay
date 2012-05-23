@@ -1,0 +1,85 @@
+
+    
+        /* #f9cd0d */
+    
+    /* General Page Stylings */
+    #container{ width:670px; margin: 0 auto; padding-top: 150px;}
+    #container .unit { border-top: 4px rgb(189,53,6)  solid; padding-top: 15px; }
+    #container .col1 { float: left; width: 245px; }
+    #container .col2 { float: left; margin-left: 20px; width: 400px;  }
+
+    strong { color: #000000; background: rgb(255,244,109);}
+    body { background: rgb(253,229,16) url('background.png') repeat-x; height: 3000px; }
+    h1 { margin: 0; padding: 0; font: normal 50px Times, serif; color: #222; letter-spacing: -1px; }
+    p { font: 12px/20px verdana, sans-serif; }
+    
+    .liimg { height: 49px; padding-top: 15px; }
+    .net { background-position: 0px -215px; }
+    .psd { background-position: 0px -115px; }
+    .vec { background-position: 0px -15px; }
+    
+    ul { margin: 0; padding: 0; }
+    li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        padding-left: 100px;
+        background: url('logos.png') no-repeat 0 -500px;
+        font: bold 11px Verdana, Arial, sans-serif;
+    }
+    li a { text-decoration: none; }
+    li a:link {color:#000;}      /* unvisited link */
+    li a:visited {color:#000;}  /* visited link */
+    li a:hover {color:#FFF;}  /* mouse over link */
+    li a:active {color:#000;}  /* selected link */
+
+    
+    
+    .ui-widget-overlay { background: #aaaaaa url(images/ui-bg_highlight-hard_40_aaaaaa_1x100.png) 50% top repeat-x; opacity: .90;filter:Alpha(Opacity=80); }
+    .ui-dialog { display: none; }
+  
+   
+
+ /* ----------------------------------------------------------------------------
+  * Styles for the jQuery-UI dialog widget contained form
+  *
+  * ------------------------------------------------------------------------  */
+    .ui-dialog {
+            background: rgb(237,237,237);
+            font: 11px verdana, arial, sans-serif;
+    }
+    .ui-dialog .ui-dialog-titlebar  {
+            font: small-caps bold 24px Georgia, Times, serif;
+    }
+    .ui-dialog h3,
+    .ui-dialog div {
+            border-top:1px solid rgb(247,247,247);
+            border-bottom:1px solid rgb(212,212,212);
+            padding:8px 0 12px 10px;
+    }
+    .ui-dialog h3 {
+            font: 18px Georgia, Times, serif;
+            margin: 0;
+    }
+    .ui-dialog select,
+    .ui-dialog textarea,
+    .ui-dialog input {
+            width:76%;
+            display: block;
+    }    
+    .ui-dialog #rating input,
+    .ui-dialog #rating label {
+            display: inline;
+            width:auto;
+    }
+    .ui-dialog .puForm div:last-child {
+        border-bottom:none;
+    }
+    .ui-dialog .puForm h3:first-child {
+        border-top:none;
+    }
+    
+
+    
+    
+    

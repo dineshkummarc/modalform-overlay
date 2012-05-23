@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Sample Form Page </title>
+    <style>
+    /*
+     * Here comes the styles.
+     */
+    h3,form div{border-top:1px solid rgb(247,247,247);border-bottom:1px solid rgb(212,212,212)}
+    h3{font:18px Georgia;padding:6px 0 6px 10px}
+    h3,#contact label{margin:0}
+    select,textarea,input{width:70%}
+    textarea{height:100px;}
+    textarea{margin-top:12px}
+    form{background:rgb(237,237,237);border:1px rgb(212,212,212) solid;margin:30px auto;width:370px}
+    form div{padding:7px}
+    #rating input{width:auto}
+    #contact label{display:block;position:relative}
+    form div:last-child{border-bottom:1px solid rgb(247,247,247)}
+    </style>
+    
+</head>
+<body>
+    <form action="process.php" class='puForm' method="post" id="modalform">
+        <h3>Rate This Article</h3>
+        <div id="rating">
+            <label><input type="radio" value="1" name="rating" />1</label>
+            <label><input type="radio" value="2" name="rating" />2</label>
+            <label><input type="radio" value="3" name="rating" />3</label>
+            <label><input type="radio" value="4" name="rating" />4</label>
+            <label><input type="radio" value="5" name="rating" />5</label>
+            <label><input type="radio" value="6" name="rating" />6</label>
+            <label><input type="radio" value="7" name="rating" />7</label>
+            <label><input type="radio" value="8" name="rating" />8</label>
+            <label><input type="radio" value="9" name="rating"/>9</label>
+            <label><input type="radio" value="10" name="rating"/>10</label>
+        </div>
+
+        <h3>I'd also like to say:</h3>
+        <div>
+            <textarea rows='4' name='commentary'>Comments Here</textarea>
+        </div>
+        
+        
+        <h3>Contact Info (optional)</h3>
+        <div id="contact">
+                <label>Email:<input type="text" name="email" /></label>
+        </div>
+        <div>
+            <button type='submit'>Send It!</button>
+        </div>
+    </form>
+<div>
+    <form action="process.php" class='puForm' id="othercontainer">
+        <h3>Answer A Question</h3>
+        <div>
+            <label>What's your favorite soda?
+            <select name="soda">
+                <option value="Dr. Pepper">Dr. Pepper</option>
+                <option value="Coca-Cola">Coca-Cola</option>
+                <option value="Pepsi">Pepsi</option>
+                <option value="Mountain Dew">Mountain Dew</option>
+                <option value="Sprite">Sprite</option>
+                <option value="Barqs Root Beer">Barqs Root Beer</option>
+                <option value="Mr. Pibb">Mr. Pibb</option>
+                <option value="Jones Soda">Jones Soda</option>
+                <option value="7UP">7UP</option>
+                <option value="Crush">Crush</option>
+                <option value="Fanta">Fanta</option>
+                <option value="Slice">Slice</option>
+                <option value="RC Cola">RC Cola</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
